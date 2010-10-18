@@ -36,7 +36,7 @@ module RespondsToParent
       # Either pull out a redirect or the request body
       script =  if response.headers['Location']
                   #TODO: erase_redirect_results is missing in rails 3.0 has to be implemented
-                  #erase redirect
+#                  erase redirect
                   "document.location.href = #{location.to_s.inspect}"
                 else
                   response.body
